@@ -4,7 +4,7 @@
 
 STAT method to track neuron is developed out of our own need to study songbird vocal learning, where we have nonrigid motion in the brain between calcium imaging sessions. Compared to previous methods, STAT aims to be as automated as possible with as few parameters as possible. Our parameters also have physics meaning to serve as a confident index. In addition to our songbird data, we have tried it on 3D volumn imaging data, as well as very dense 2p calcium imaging data, which all seems to work well.
 
-Here we publicize this package with the hope that it will help your research. We are welcoming feedbacks. To introduce how STAT works, we have prepared a set of slides 📎 [STAT_intro.pdf](STAT_intro.pdf). To get started using STAT, please see the two demos we provide: [demo_2sessions.m](demos/demo_2sessions.m), [demo_multi_sessions.m](demos/demo_multi_sessions.m). The only **input** STAT needs is the spatial footprints(d1 x d2 x n) of ROIs from each session, put in a cell array.
+Here we publicize this package with the hope that it will help your research. We are welcoming feedbacks. To introduce how STAT works, we have prepared a set of slides 📎 [STAT_intro.pdf](STAT_intro.pdf). To get started using STAT, please see the two demos we provide: [demo_2sessions.m](demo_2sessions.m). The only **input** STAT needs is the spatial footprints(d1 x d2 x n) of ROIs from each session, put in a cell array.
 
 A more formal manuscript will come soon. Meanwhile, feel free to show us your results and ask us questions if STAT confuses you.
 

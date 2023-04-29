@@ -1,0 +1,4 @@
+{d1: 300.0, d2: 400.0, d3: 1.0, nonconverge_method: intersection, init_method: distance,
+  cal_corr: 0.0, direction: both, crop_width: 15.0, p_method: hard_flexible, R: 20.0,
+  thresh: 8.0, nRep: 15.0, move: 0.0, auto_move: 0.0, max_shift: 30.0, parallel_num: 0.0,
+  keep_A: 0.0, strict: 0.0, retronum: 4.0, output_path: /Users/shijiegu/Documents/CellTracking/STAT/DemoData}

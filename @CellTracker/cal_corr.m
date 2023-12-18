@@ -30,11 +30,15 @@ N2=sizes(end);
 p = inputParser;
 addParameter(p,'ind2cal_1',1:N1);
 addParameter(p,'ind2cal_2',1:N2);
+addParameter(p,'mode','max');
 parse(p, varargin{:});
 ind2cal_1=sort(p.Results.ind2cal_1,'ascend');
 ind2cal_2=sort(p.Results.ind2cal_2,'ascend');
+mode=p.Results.mode;
 
 D = zeros(N1, N2);
+s1=size(FFT_1(:,:,1),1);
+s2=size(FFT_1(:,:,1),2);
 
 % compute max correlation
 for i=1:length(ind2cal_1)
@@ -52,7 +56,11 @@ for i=1:length(ind2cal_1)
             FFT_2_tmp=FFT_2(:,:,:,nj);
         end        
         c = real(ifftn(FFT_1_tmp.*FFT_2_tmp));
-        D(ni,nj)=max(c(:));
+        if strcmp(mode,'max')
+            D(ni,nj)=max(c(:));
+        elseif strcmp(mode,'center')
+            D(ni,nj)=c((s1+1)/2,(s2+1)/2);
+        end
     end
 end
 

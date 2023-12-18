@@ -1,7 +1,7 @@
-RESULT_01=cell(3,5);
+RESULT_10=cell(3,5);
 for i=1:3
     for j=1:5
-        RESULT_01{i,j}=setdiff(RESULT_0{i,j},RESULT_1{i,j},'rows');
+        RESULT_10{i,j}=setdiff(RESULT_1{i,j},RESULT_0{i,j},'rows');
     end
 end
 %%
